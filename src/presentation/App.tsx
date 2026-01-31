@@ -3,8 +3,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/footer';
 import HomePage from './pages/HomePage';
-import footer from '../presentation/components/footer';
+
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,8 @@ const App: React.FC = () => {
           <Route path="/whois" element={<div className="p-8 text-center">Whois Page - Coming Soon</div>} />
           <Route path="/deals" element={<div className="p-8 text-center">Deals Page - Coming Soon</div>} />
         </Routes>
+        
+        <Footer/>
       </div>
     </Router>
   );
